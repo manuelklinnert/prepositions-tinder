@@ -92,6 +92,7 @@
     card.style.transform = "";
     card.classList.remove("animate-out", "snap-back", "correct", "wrong");
     scoreBadge.classList.remove("visible");
+    justSwiped = false;
   }
 
   // --- Game init ---
@@ -144,6 +145,7 @@
     var flyX = swipedLeft ? "-150%" : "150%";
     var rot  = swipedLeft ? "-20deg" : "20deg";
     card.classList.add("animate-out");
+    card.offsetWidth; // force reflow so transition is active before transform changes
     card.style.transform = "translateX(" + flyX + ") rotate(" + rot + ")";
 
     setTimeout(function () {
