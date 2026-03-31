@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Präpositionen Tinder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div id="progress-bar">
+    <span id="progress-text">0 / 20 gemeistert</span>
+  </div>
+
+  <!-- Card view -->
+  <div id="screen-cards" class="screen active">
+    <div id="card-stack">
+      <div id="card">
+        <p id="card-sentence"></p>
+        <div id="card-choices">
+          <span id="choice-left" class="choice"></span>
+          <span id="choice-right" class="choice"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Summary screen -->
+  <div id="screen-summary" class="screen">
+    <h2>Runde beendet!</h2>
+    <p id="summary-text"></p>
+    <button id="btn-restart">Weiter üben</button>
+  </div>
+
+  <!-- Congratulations screen -->
+  <div id="screen-congrats" class="screen">
+    <h2>Glückwunsch! 🎉</h2>
+    <p>Du hast alle Präpositionen gemeistert!</p>
+    <button id="btn-reset">Nochmal von vorne</button>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
