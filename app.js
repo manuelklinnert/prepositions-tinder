@@ -12,6 +12,7 @@
   var screenSummary = document.getElementById("screen-summary");
   var screenCongrats = document.getElementById("screen-congrats");
   var progressText  = document.getElementById("progress-text");
+  var progressFill  = document.getElementById("progress-fill");
   var card          = document.getElementById("card");
   var cardSentence  = document.getElementById("card-sentence");
   var choiceLeft    = document.getElementById("choice-left");
@@ -63,7 +64,9 @@
 
   function updateProgressBar() {
     var mastered = countMastered();
-    progressText.textContent = mastered + " / " + window.EXERCISES.length + " gemeistert";
+    var total = window.EXERCISES.length;
+    progressText.textContent = mastered + " / " + total + " gemeistert";
+    progressFill.style.width = (mastered / total * 100) + "%";
   }
 
   // --- Screens ---
