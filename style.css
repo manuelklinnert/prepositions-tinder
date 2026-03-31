@@ -112,6 +112,42 @@ body {
   color: #333;
 }
 
+/* Result popup */
+#result-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: white;
+  pointer-events: none;
+  z-index: 10;
+  opacity: 0;
+}
+
+#result-popup.show-correct {
+  background: #28a745;
+  animation: popup-show 0.45s ease forwards;
+}
+
+#result-popup.show-wrong {
+  background: #dc3545;
+  animation: popup-show 0.45s ease forwards;
+}
+
+@keyframes popup-show {
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+  35%  { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+  55%  { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
+}
+
 /* Score reset badge */
 #score-badge {
   position: absolute;

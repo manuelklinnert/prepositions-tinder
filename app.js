@@ -19,6 +19,7 @@
   var summaryText   = document.getElementById("summary-text");
   var btnRestart    = document.getElementById("btn-restart");
   var btnReset      = document.getElementById("btn-reset");
+  var resultPopup   = document.getElementById("result-popup");
 
   // Create score badge element
   var scoreBadge = document.createElement("span");
@@ -127,8 +128,11 @@
     var choseCorrect = (swipedLeft && correctSide === "left") ||
                        (!swipedLeft && correctSide === "right");
 
-    // Apply color feedback
+    // Apply color feedback + popup
     card.classList.add(choseCorrect ? "correct" : "wrong");
+    resultPopup.textContent = choseCorrect ? "✓" : "✗";
+    resultPopup.className = choseCorrect ? "show-correct" : "show-wrong";
+    setTimeout(function () { resultPopup.className = ""; }, 450);
 
     // Update score
     var current = progress[exercise.id] || 0;
