@@ -16,33 +16,31 @@ window.EXERCISES = [
     id: "akk-03",
     sentence: "Er kämpft ___ die Ungerechtigkeit.",
     correct: "gegen",
-    wrong: ["für", "ohne", "um"]
+    wrong: ["auf", "ohne", "um"]
   },
   {
     id: "akk-04",
     sentence: "Sie geht ___ Regenschirm raus.",
     correct: "ohne",
-    wrong: ["mit", "durch", "gegen"]
+    wrong: ["bei", "durch", "gegen"]
   },
   {
     id: "akk-05",
     sentence: "Die Kinder laufen ___ den Baum.",
     correct: "um",
-    wrong: ["durch", "gegen", "ohne"]
+    wrong: ["durch", "auf", "ohne"]
   },
-
-  // Dativ: aus, bei, mit, nach, seit, von, zu, gegenüber
   {
     id: "dat-01",
     sentence: "Er kommt ___ Deutschland.",
     correct: "aus",
-    wrong: ["von", "nach", "bei"]
+    wrong: ["von", "zu", "bei"]
   },
   {
     id: "dat-02",
     sentence: "Ich wohne ___ meinen Eltern.",
     correct: "bei",
-    wrong: ["mit", "von", "zu"]
+    wrong: ["auf", "von", "zu"]
   },
   {
     id: "dat-03",
@@ -54,13 +52,13 @@ window.EXERCISES = [
     id: "dat-04",
     sentence: "Wir fliegen ___ Berlin.",
     correct: "nach",
-    wrong: ["zu", "von", "aus"]
+    wrong: ["zu", "auf", "bei"]
   },
   {
     id: "dat-05",
     sentence: "Ich lerne Deutsch ___ drei Jahren.",
     correct: "seit",
-    wrong: ["nach", "von", "bei"]
+    wrong: ["an", "von", "bei"]
   },
   {
     id: "dat-06",
@@ -77,11 +75,9 @@ window.EXERCISES = [
   {
     id: "dat-08",
     sentence: "Die Bank ist ___ der Post.",
-    correct: "gegenüber",
-    wrong: ["neben", "bei", "von"]
+    correct: "bei",
+    wrong: ["auf", "nach", "von"]
   },
-
-  // Wechselpräpositionen: an, auf, in, über, unter, vor, zwischen
   {
     id: "wech-01",
     sentence: "Das Bild hängt ___ der Wand.",
@@ -92,37 +88,37 @@ window.EXERCISES = [
     id: "wech-02",
     sentence: "Das Buch liegt ___ dem Tisch.",
     correct: "auf",
-    wrong: ["an", "unter", "in"]
+    wrong: ["an", "zu", "in"]
   },
   {
     id: "wech-03",
     sentence: "Die Katze sitzt ___ der Box.",
     correct: "in",
-    wrong: ["auf", "unter", "an"]
+    wrong: ["an", "gegenüber", "zwischen"]
   },
   {
     id: "wech-04",
     sentence: "Die Lampe hängt ___ dem Tisch.",
     correct: "über",
-    wrong: ["auf", "an", "vor"]
+    wrong: ["auf", "an", "nach"]
   },
   {
     id: "wech-05",
     sentence: "Der Hund liegt ___ dem Bett.",
     correct: "unter",
-    wrong: ["auf", "in", "vor"]
+    wrong: ["an", "zu", "zwischen"]
   },
   {
     id: "wech-06",
     sentence: "Das Auto steht ___ dem Haus.",
     correct: "vor",
-    wrong: ["hinter", "neben", "unter"]
+    wrong: ["ohne", "um", "nach"]
   },
   {
     id: "wech-07",
     sentence: "Der Park liegt ___ den zwei Gebäuden.",
     correct: "zwischen",
-    wrong: ["vor", "hinter", "über"]
+    wrong: ["nach", "auf", "über"]
   },
 
   // Akkusativ: durch, für, gegen, ohne, um (weitere)
@@ -130,7 +126,7 @@ window.EXERCISES = [
     id: "akk-06",
     sentence: "Er kämpft ___ die Ungerechtigkeit.",
     correct: "gegen",
-    wrong: ["für", "ohne", "um"]
+    wrong: ["bei", "mit", "um"]
   },
   {
     id: "akk-07",
@@ -142,13 +138,13 @@ window.EXERCISES = [
     id: "akk-08",
     sentence: "Sie läuft ___ den Park.",
     correct: "durch",
-    wrong: ["um", "in", "über"]
+    wrong: ["auf", "zu", "unter"]
   },
   {
     id: "akk-09",
     sentence: "Ich kann nicht ___ Musik leben.",
     correct: "ohne",
-    wrong: ["mit", "gegen", "durch"]
+    wrong: ["bei", "gegen", "durch"]
   },
   {
     id: "akk-10",
@@ -178,31 +174,31 @@ window.EXERCISES = [
     id: "akk-14",
     sentence: "Wir fahren einmal ___ die Insel.",
     correct: "um",
-    wrong: ["durch", "über", "an"]
+    wrong: ["von", "nach", "an"]
   },
   {
     id: "akk-15",
     sentence: "Das Mittel hilft ___ Kopfschmerzen.",
     correct: "gegen",
-    wrong: ["für", "ohne", "bei"]
+    wrong: ["für", "ohne", "zu"]
   },
   {
     id: "akk-16",
     sentence: "Er trinkt seinen Kaffee ___ Zucker.",
     correct: "ohne",
-    wrong: ["mit", "bei", "von"]
+    wrong: ["auf", "bei", "von"]
   },
   {
     id: "akk-17",
     sentence: "Die Schüler demonstrieren ___ mehr Lohn.",
     correct: "für",
-    wrong: ["gegen", "ohne", "um"]
+    wrong: ["bei", "ohne", "um"]
   },
   {
     id: "akk-18",
     sentence: "Das Kind rennt ___ die Mauer.",
     correct: "gegen",
-    wrong: ["an", "durch", "über"]
+    wrong: ["von", "bei", "zu"]
   },
   {
     id: "akk-19",
@@ -214,7 +210,7 @@ window.EXERCISES = [
     id: "akk-20",
     sentence: "Das ist doch nichts ___ mich.",
     correct: "für",
-    wrong: ["gegen", "ohne", "durch"]
+    wrong: ["über", "ohne", "durch"]
   },
   {
     id: "akk-21",
@@ -226,7 +222,7 @@ window.EXERCISES = [
     id: "akk-22",
     sentence: "Sie spazieren ___ die Altstadt.",
     correct: "durch",
-    wrong: ["um", "über", "in"]
+    wrong: ["um", "über", "bei"]
   },
   {
     id: "akk-23",
@@ -252,7 +248,7 @@ window.EXERCISES = [
     id: "dat-09",
     sentence: "Er kommt gerade ___ dem Büro.",
     correct: "aus",
-    wrong: ["von", "nach", "bei"]
+    wrong: ["zu", "nach", "bei"]
   },
   {
     id: "dat-10",
@@ -288,19 +284,19 @@ window.EXERCISES = [
     id: "dat-15",
     sentence: "Sie kauft Gemüse ___ dem Bauern.",
     correct: "bei",
-    wrong: ["von", "mit", "zu"]
+    wrong: ["auf", "mit", "zu"]
   },
   {
     id: "dat-16",
     sentence: "Das haben wir ___ einem Kurs gelernt.",
     correct: "bei",
-    wrong: ["von", "mit", "in"]
+    wrong: ["von", "mit", "auf"]
   },
   {
     id: "dat-17",
     sentence: "Er hilft ihr ___ der Arbeit.",
     correct: "bei",
-    wrong: ["mit", "an", "von"]
+    wrong: ["auf", "an", "von"]
   },
   {
     id: "dat-18",
@@ -318,7 +314,7 @@ window.EXERCISES = [
     id: "dat-20",
     sentence: "Sie spricht ___ ihrer Chefin.",
     correct: "mit",
-    wrong: ["bei", "von", "zu"]
+    wrong: ["bei", "über", "zu"]
   },
   {
     id: "dat-21",
@@ -330,13 +326,13 @@ window.EXERCISES = [
     id: "dat-22",
     sentence: "Das Brot schmeckt gut ___ Butter.",
     correct: "mit",
-    wrong: ["bei", "von", "ohne"]
+    wrong: ["bei", "von", "zu"]
   },
   {
     id: "dat-23",
     sentence: "Wir feiern das ___ unserer Familie.",
     correct: "mit",
-    wrong: ["bei", "von", "zu"]
+    wrong: ["über", "von", "zu"]
   },
   {
     id: "dat-24",
@@ -348,7 +344,7 @@ window.EXERCISES = [
     id: "dat-25",
     sentence: "Er kommt ___ dem Training nach Hause.",
     correct: "nach",
-    wrong: ["bei", "vor", "seit"]
+    wrong: ["bei", "während", "seit"]
   },
   {
     id: "dat-26",
@@ -366,7 +362,7 @@ window.EXERCISES = [
     id: "dat-28",
     sentence: "Wir essen ___ dem Konzert zusammen.",
     correct: "nach",
-    wrong: ["bei", "vor", "seit"]
+    wrong: ["bei", "während", "seit"]
   },
   {
     id: "dat-29",
@@ -414,7 +410,7 @@ window.EXERCISES = [
     id: "dat-36",
     sentence: "Er kommt gerade ___ der Arbeit.",
     correct: "von",
-    wrong: ["aus", "nach", "bei"]
+    wrong: ["bei", "nach", "auf"]
   },
   {
     id: "dat-37",
@@ -426,7 +422,7 @@ window.EXERCISES = [
     id: "dat-38",
     sentence: "Sie kommt ___ dem Supermarkt.",
     correct: "von",
-    wrong: ["aus", "nach", "bei"]
+    wrong: ["über", "in", "bei"]
   },
   {
     id: "dat-39",
@@ -459,35 +455,24 @@ window.EXERCISES = [
     wrong: ["bei", "nach", "von"]
   },
   {
-    id: "dat-44",
-    sentence: "Das Restaurant ist ___ dem Hotel.",
-    correct: "gegenüber",
-    wrong: ["neben", "bei", "vor"]
-  },
-  {
     id: "dat-45",
     sentence: "Die Schule liegt ___ dem Park.",
     correct: "gegenüber",
-    wrong: ["neben", "vor", "hinter"]
+    wrong: ["über", "auf", "an"]
   },
   {
     id: "dat-46",
     sentence: "Er sitzt mir ___ am Tisch.",
     correct: "gegenüber",
-    wrong: ["neben", "vor", "hinter"]
+    wrong: ["neben", "vor", "auf"]
   },
   {
     id: "dat-47",
     sentence: "Das Café befindet sich ___ der Apotheke.",
     correct: "gegenüber",
-    wrong: ["neben", "bei", "vor"]
+    wrong: ["auf", "von", "nach"]
   },
-  {
-    id: "dat-48",
-    sentence: "Die Bibliothek liegt ___ dem Rathaus.",
-    correct: "gegenüber",
-    wrong: ["neben", "hinter", "vor"]
-  },
+
 
   // Wechselpräpositionen (weitere)
   {
@@ -506,37 +491,37 @@ window.EXERCISES = [
     id: "wech-10",
     sentence: "Sie sitzt ___ ihrem Schreibtisch.",
     correct: "an",
-    wrong: ["auf", "bei", "vor"]
+    wrong: ["zu", "bei", "vor"]
   },
   {
     id: "wech-11",
     sentence: "Er lehnt das Fahrrad ___ den Zaun.",
     correct: "an",
-    wrong: ["gegen", "vor", "hinter"]
+    wrong: ["bei", "vor", "hinter"]
   },
   {
     id: "wech-12",
     sentence: "Die Kinder stehen ___ der Tafel.",
     correct: "an",
-    wrong: ["vor", "auf", "neben"]
+    wrong: ["nach", "auf", "zu"]
   },
   {
     id: "wech-13",
     sentence: "Die Tasse steht ___ dem Regal.",
     correct: "auf",
-    wrong: ["an", "in", "unter"]
+    wrong: ["an", "zu", "gegen"]
   },
   {
     id: "wech-14",
     sentence: "Er legt das Buch ___ den Tisch.",
     correct: "auf",
-    wrong: ["an", "unter", "in"]
+    wrong: ["an", "zu", "in"]
   },
   {
     id: "wech-15",
     sentence: "Die Vögel sitzen ___ dem Dach.",
     correct: "auf",
-    wrong: ["an", "in", "unter"]
+    wrong: ["an", "in", "von"]
   },
   {
     id: "wech-16",
@@ -548,31 +533,19 @@ window.EXERCISES = [
     id: "wech-17",
     sentence: "Sie wartet ___ dem Bahnsteig.",
     correct: "auf",
-    wrong: ["an", "in", "vor"]
+    wrong: ["über", "in", "unter"]
   },
   {
     id: "wech-18",
     sentence: "Der Hund versteckt sich ___ dem Sofa.",
     correct: "hinter",
-    wrong: ["unter", "neben", "vor"]
-  },
-  {
-    id: "wech-19",
-    sentence: "Das Auto parkt ___ dem Haus.",
-    correct: "hinter",
-    wrong: ["vor", "neben", "unter"]
+    wrong: ["nach", "zu", "gegen"]
   },
   {
     id: "wech-20",
     sentence: "Das Kind versteckt sich ___ dem Vorhang.",
     correct: "hinter",
     wrong: ["unter", "vor", "an"]
-  },
-  {
-    id: "wech-21",
-    sentence: "Die Garage liegt ___ dem Garten.",
-    correct: "hinter",
-    wrong: ["vor", "neben", "unter"]
   },
   {
     id: "wech-22",
@@ -590,50 +563,27 @@ window.EXERCISES = [
     id: "wech-24",
     sentence: "Das Kind spielt ___ dem Garten.",
     correct: "in",
-    wrong: ["auf", "an", "vor"]
+    wrong: ["auf", "an", "zu"]
   },
   {
     id: "wech-25",
     sentence: "Er wartet ___ dem Auto.",
     correct: "in",
-    wrong: ["bei", "auf", "an"]
+    wrong: ["nach", "auf", "an"]
   },
   {
     id: "wech-26",
     sentence: "Sie legt die Jacke ___ den Schrank.",
     correct: "in",
-    wrong: ["auf", "an", "unter"]
+    wrong: ["zu", "an", "unter"]
   },
   {
     id: "wech-27",
     sentence: "Das Glas steht ___ der Flasche.",
     correct: "neben",
-    wrong: ["auf", "vor", "hinter"]
+    wrong: ["auf", "an", "zu"]
   },
-  {
-    id: "wech-28",
-    sentence: "Er sitzt ___ seiner Schwester.",
-    correct: "neben",
-    wrong: ["bei", "vor", "hinter"]
-  },
-  {
-    id: "wech-29",
-    sentence: "Das Fahrrad steht ___ dem Eingang.",
-    correct: "neben",
-    wrong: ["vor", "hinter", "an"]
-  },
-  {
-    id: "wech-30",
-    sentence: "Die Lampe steht ___ dem Bett.",
-    correct: "neben",
-    wrong: ["auf", "vor", "hinter"]
-  },
-  {
-    id: "wech-31",
-    sentence: "Das Flugzeug fliegt ___ den Wolken.",
-    correct: "über",
-    wrong: ["unter", "durch", "an"]
-  },
+
   {
     id: "wech-32",
     sentence: "Er zieht den Pullover ___ den Kopf.",
@@ -650,84 +600,40 @@ window.EXERCISES = [
     id: "wech-34",
     sentence: "Das Bild hängt ___ dem Fernseher.",
     correct: "über",
-    wrong: ["unter", "auf", "an"]
+    wrong: ["zu", "auf", "an"]
   },
-  {
-    id: "wech-35",
-    sentence: "Sie legt die Decke ___ das Kind.",
-    correct: "über",
-    wrong: ["auf", "um", "unter"]
-  },
-  {
-    id: "wech-36",
-    sentence: "Die Schuhe stehen ___ dem Bett.",
-    correct: "unter",
-    wrong: ["auf", "neben", "vor"]
-  },
+
   {
     id: "wech-37",
     sentence: "Der Schlüssel liegt ___ dem Kissen.",
     correct: "unter",
-    wrong: ["auf", "in", "neben"]
+    wrong: ["aus", "in", "nach"]
   },
   {
     id: "wech-38",
     sentence: "Das Kind krabbelt ___ den Tisch.",
     correct: "unter",
-    wrong: ["auf", "an", "durch"]
+    wrong: ["aus", "an", "durch"]
   },
   {
     id: "wech-39",
     sentence: "Er versteckt das Geld ___ der Matratze.",
     correct: "unter",
-    wrong: ["auf", "in", "neben"]
+    wrong: ["aus", "von", "gegen"]
   },
-  {
-    id: "wech-40",
-    sentence: "Das Taxi wartet ___ dem Hotel.",
-    correct: "vor",
-    wrong: ["hinter", "neben", "an"]
-  },
-  {
-    id: "wech-41",
-    sentence: "Er stellt sich ___ den Spiegel.",
-    correct: "vor",
-    wrong: ["hinter", "an", "neben"]
-  },
+
   {
     id: "wech-42",
     sentence: "Das Kind hat Angst ___ dem Hund.",
     correct: "vor",
     wrong: ["von", "bei", "gegen"]
   },
-  {
-    id: "wech-43",
-    sentence: "Sie steht ___ der Tür und klingelt.",
-    correct: "vor",
-    wrong: ["an", "hinter", "neben"]
-  },
+ 
   {
     id: "wech-44",
     sentence: "Das Café liegt ___ der Bank und dem Kino.",
     correct: "zwischen",
-    wrong: ["unter", "neben", "vor"]
+    wrong: ["unter", "auf", "aus"]
   },
-  {
-    id: "wech-45",
-    sentence: "Er sitzt ___ seinen Freunden.",
-    correct: "zwischen",
-    wrong: ["unter", "neben", "vor"]
-  },
-  {
-    id: "wech-46",
-    sentence: "Die Katze schläft ___ den Kissen.",
-    correct: "zwischen",
-    wrong: ["unter", "auf", "neben"]
-  },
-  {
-    id: "wech-47",
-    sentence: "Das Haus steht ___ zwei Bäumen.",
-    correct: "zwischen",
-    wrong: ["unter", "neben", "hinter"]
-  }
+
 ];

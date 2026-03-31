@@ -9,9 +9,23 @@
 <body>
   <!-- Progress bar -->
   <div id="progress-bar">
-    <span id="progress-text">0 / 20 gemeistert</span>
+    <div id="progress-header">
+      <span id="progress-text">0 / 20 gemeistert</span>
+      <button id="btn-start-over">Starte neu</button>
+    </div>
     <div id="progress-track">
       <div id="progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- Confirm reset modal -->
+  <div id="modal-overlay">
+    <div id="modal-box">
+      <p>Möchtest du wirklich den Fortschritt auf 0 zurücksetzen?</p>
+      <div id="modal-buttons">
+        <button id="btn-modal-cancel">Abbrechen</button>
+        <button id="btn-modal-confirm">Zurücksetzen</button>
+      </div>
     </div>
   </div>
 

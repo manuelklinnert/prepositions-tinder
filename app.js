@@ -20,6 +20,10 @@
   var summaryText   = document.getElementById("summary-text");
   var btnRestart    = document.getElementById("btn-restart");
   var btnReset      = document.getElementById("btn-reset");
+  var btnStartOver  = document.getElementById("btn-start-over");
+  var modalOverlay  = document.getElementById("modal-overlay");
+  var btnModalCancel  = document.getElementById("btn-modal-cancel");
+  var btnModalConfirm = document.getElementById("btn-modal-confirm");
   var resultPopup   = document.getElementById("result-popup");
 
   // Create score badge element
@@ -123,6 +127,21 @@
   btnReset.addEventListener("click", function () {
     localStorage.removeItem(STORAGE_KEY);
     startGame();
+  });
+
+  btnStartOver.addEventListener("click", function () {
+    modalOverlay.classList.add("active");
+  });
+  btnModalCancel.addEventListener("click", function () {
+    modalOverlay.classList.remove("active");
+  });
+  btnModalConfirm.addEventListener("click", function () {
+    modalOverlay.classList.remove("active");
+    localStorage.removeItem(STORAGE_KEY);
+    startGame();
+  });
+  modalOverlay.addEventListener("click", function (e) {
+    if (e.target === modalOverlay) modalOverlay.classList.remove("active");
   });
 
   // --- Answer logic ---
