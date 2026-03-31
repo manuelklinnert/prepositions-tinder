@@ -120,6 +120,95 @@
     startGame();
   });
 
+  // --- Answer logic ---
+  function handleAnswer(swipedLeft) {
+    var exercise = exercises[currentIndex];
+    var choseCorrect = (swipedLeft && correctSide === "left") ||
+                       (!swipedLeft && correctSide === "right");
+
+    // Apply color feedback
+    card.classList.add(choseCorrect ? "correct" : "wrong");
+
+    // Update score
+    var current = progress[exercise.id] || 0;
+    if (choseCorrect) {
+      progress[exercise.id] = Math.min(current + 1, 3);
+    } else {
+      progress[exercise.id] = 0;
+      scoreBadge.classList.add("visible");
+    }
+    saveProgress();
+    updateProgressBar();
+
+    // Fly card off screen
+    var flyX = swipedLeft ? "-150%" : "150%";
+    var rot  = swipedLeft ? "-20deg" : "20deg";
+    card.classList.add("animate-out");
+    card.style.transform = "translateX(" + flyX + ") rotate(" + rot + ")";
+
+    setTimeout(function () {
+      currentIndex++;
+      if (currentIndex >= exercises.length) {
+        var totalMastered = countMastered();
+        if (totalMastered >= window.EXERCISES.length) {
+          showScreen("screen-congrats");
+        } else {
+          summaryText.textContent =
+            totalMastered + " von " + window.EXERCISES.length + " gemeistert.";
+          showScreen("screen-summary");
+        }
+      } else {
+        renderCard(exercises[currentIndex]);
+      }
+    }, 380);
+  }
+
+  // --- Touch / swipe ---
+  var touchStartX = 0;
+  var touchCurrentX = 0;
+  var isDragging = false;
+  var justSwiped = false;
+  var SWIPE_THRESHOLD = 60;
+
+  card.addEventListener("touchstart", function (e) {
+    touchStartX = e.touches[0].clientX;
+    touchCurrentX = touchStartX;
+    isDragging = true;
+    justSwiped = false;
+    card.classList.remove("snap-back", "animate-out");
+    card.style.transition = "none";
+  }, { passive: true });
+
+  card.addEventListener("touchmove", function (e) {
+    if (!isDragging) return;
+    touchCurrentX = e.touches[0].clientX;
+    var delta = touchCurrentX - touchStartX;
+    var rot = delta * 0.08;
+    card.style.transform = "translateX(" + delta + "px) rotate(" + rot + "deg)";
+  }, { passive: true });
+
+  card.addEventListener("touchend", function () {
+    if (!isDragging) return;
+    isDragging = false;
+    var delta = touchCurrentX - touchStartX;
+
+    if (Math.abs(delta) >= SWIPE_THRESHOLD) {
+      justSwiped = true;
+      handleAnswer(delta < 0);
+    } else {
+      card.classList.add("snap-back");
+      card.style.transform = "";
+    }
+  });
+
+  // --- Click fallback (tap left/right half) ---
+  card.addEventListener("click", function (e) {
+    if (justSwiped) { justSwiped = false; return; }
+    var rect = card.getBoundingClientRect();
+    var clickedLeft = e.clientX < rect.left + rect.width / 2;
+    handleAnswer(clickedLeft);
+  });
+
   // --- Boot ---
   startGame();
 })();
